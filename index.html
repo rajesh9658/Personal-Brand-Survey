@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Brand Survey</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+<div class="container">
+  <h1>Personal Brand Survey</h1>
+  <p>Thank you for taking the time to provide feedback on my personal brand. This survey is designed to help me understand how others perceive my work, strengths, and overall brand. Your honest and constructive feedback is greatly appreciated.</p>
+  
+  <form action="#" method="post">
+    
+    <!-- Section 1: Basic Information -->
+    <fieldset>
+      <legend>Basic Information</legend>
+      
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <label for="age">Your Age</label>
+  <input type="number" id="age" name="age" placeholder="Enter your age" min="13" max="120" required>
+      <label for="relationship">How do you know me?</label>
+      <select id="relationship" name="relationship" required>
+        <option value="" disabled selected>Select your relationship to me</option>
+        <option value="friend">Friend</option>
+        <option value="colleague">Colleague</option>
+        <option value="mentor">Mentor</option>
+        <option value="client">Client</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    
+   <!-- Example: Adding Radio Buttons in the Brand Perception Section -->
+<fieldset>
+    <legend>Brand Perception</legend>
+    
+    <!-- Existing Fields -->
+    <label for="keywords">What three words come to mind when you think of me?</label>
+    <input type="text" id="keywords" name="keywords" placeholder="e.g., creative, reliable, passionate" required>
+    
+    <label for="strengths">What do you see as my greatest strengths?</label>
+    <textarea id="strengths" name="strengths" rows="4" placeholder="Describe my strengths..." required></textarea>
+    
+    <!-- New Radio Button Group -->
+    <label for="professionalism">How would you rate my professionalism?</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="professionalism" value="excellent" required>
+        Excellent
+      </label>
+      <label>
+        <input type="radio" name="professionalism" value="good">
+        Good
+      </label>
+      <label>
+        <input type="radio" name="professionalism" value="average">
+        Average
+      </label>
+      <label>
+        <input type="radio" name="professionalism" value="poor">
+        Poor
+      </label>
+    </div>
+  </fieldset>
+  
+    
+    <!-- Section 3: Brand Visibility -->
+    <!-- Section 3: Brand Visibility -->
+<fieldset>
+    <legend>Brand Visibility</legend>
+    
+    <!-- Existing Fields -->
+    <label for="visibility">How well-known do you think I am in my field?</label>
+    <select id="visibility" name="visibility" required>
+      <option value="" disabled selected>Select an option</option>
+      <option value="not_well_known">Not well-known</option>
+      <option value="somewhat_known">Somewhat known</option>
+      <option value="well_known">Well-known</option>
+      <option value="very_well_known">Very well-known</option>
+    </select>
+    
+    <label for="online_presence">How would you rate my online presence (e.g., social media, personal website)?</label>
+    <select id="online_presence" name="online_presence" required>
+      <option value="" disabled selected>Select an option</option>
+      <option value="poor">Poor</option>
+      <option value="average">Average</option>
+      <option value="good">Good</option>
+      <option value="excellent">Excellent</option>
+    </select>
+    
+    <!-- New Checkbox Group -->
+    <label>On which platforms have you seen or interacted with my brand? (Select all that apply)</label>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="platforms" value="social_media">
+        Social Media (e.g., Facebook, Instagram, LinkedIn)
+      </label>
+      <label>
+        <input type="checkbox" name="platforms" value="website">
+        Personal Website
+      </label>
+      <label>
+        <input type="checkbox" name="platforms" value="blog">
+        Blog or Articles
+      </label>
+      <label>
+        <input type="checkbox" name="platforms" value="youtube">
+        YouTube or Video Content
+      </label>
+      <label>
+        <input type="checkbox" name="platforms" value="podcast">
+        Podcasts
+      </label>
+      <label>
+        <input type="checkbox" name="platforms" value="other">
+        Other
+      </label>
+    </div>
+  </fieldset>
+  
+    
+    <!-- Section 4: Additional Feedback -->
+    <fieldset>
+      <legend>Additional Feedback</legend>
+      
+      <label for="feedback">Do you have any other feedback or suggestions regarding my personal brand?</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Share any additional thoughts..."></textarea>
+    </fieldset>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Survey">
+    
+  </form>
+</div>
+
+</body>
+</html>
